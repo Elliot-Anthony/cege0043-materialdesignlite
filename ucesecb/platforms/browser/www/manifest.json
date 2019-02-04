@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Material Template",
+  "short_name": "Material Template",
+  "version": "fullmaterialtemplate",
+  "description": "Hello Elliot, Welcome to your Website.",
+  "author": "PhoneGap Team",
+  "icons": [],
+  "start_url": "index.html"
+}
