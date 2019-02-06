@@ -1,0 +1,3 @@
+function menuClicked(){ 
+	alert("Youclickedthemenu");
+}
