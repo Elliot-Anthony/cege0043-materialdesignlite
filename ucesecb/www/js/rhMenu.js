@@ -3,5 +3,5 @@ alert("You clicked the menu");
 }
 
 function addUCLLogo(){
-document.getElementById("cllogo").innerHTML ="<img src=' images/ucl.png'>"
+document.getElementById("ucllogo").innerHTML ="<img src=' images/ucl.png'>"
 }
