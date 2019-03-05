@@ -1,3 +1,4 @@
+
 var userMarker;
 
 function trackLocation() {
@@ -67,3 +68,16 @@ function getDistanceFromMultiplePoints(position) {
 	}
 	alert("Earthquake: " + closestQuake + " is distance " + minDistance + "km" +" away");
 }
+
+function trackLocation() {
+	if (navigator.geolocation) {
+	navigator.geolocation.watchPosition(showPosition);
+	} else {
+	document.getElementById('showLocation').innerHTML = "Geolocation is not supported by this browser.";}
+	}
+
+function showPosition(position) {
+	document.getElementById('showLocation').innerHTML = "Latitude: " + position.coords.latitude +
+	"<br>Longitude: " + position.coords.longitude;
+	}
+
