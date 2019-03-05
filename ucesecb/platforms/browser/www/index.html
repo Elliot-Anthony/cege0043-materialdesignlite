@@ -102,7 +102,7 @@
             <li class="mdl-menu__item" onclick="addPointLinePoly()">Load Data</li>
             <li class="mdl-menu__item" onclick="getPort()">Port Number</li>
             <li class="mdl-menu__item" onclick="trackLocation();return false;">Track Location</li>
-            <li class="mdl-menu__item" onclick="showPosition()">Show Position</li>
+            <li class="mdl-menu__item" onclick="trackAndCircle();return false;">Track and Circle</li>
           </ul>
         </div>
       </header>
@@ -156,6 +156,9 @@
       <script src="js/leafletFunctions.js"></script>
       <script src="js/userTracking.js"></script>
       <script src="js/utilities.js"></script>
+      <script src="js/startup.js"></script>
+
+    <script>startup(); </script>
     
   </body>
 </html>
