@@ -100,6 +100,9 @@
             <li class="mdl-menu__item" onclick="addUCLLogo()">Contact</li>
             <li class="mdl-menu__item" onclick="menuClicked()">Legal Information</li>
             <li class="mdl-menu__item" onclick="addPointLinePoly()">Load Data</li>
+            <li class="mdl-menu__item" onclick="getPort()">Port Number</li>
+            <li class="mdl-menu__item" onclick="trackLocation();return false;">Track Location</li>
+            <li class="mdl-menu__item" onclick="trackAndCircle();return false;">Track and Circle</li>
           </ul>
         </div>
       </header>
@@ -127,7 +130,7 @@
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>Inbox</a>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">delete</i>Trash</a>
-          <a class="mdl-navigation__link" href=""" onclick='addPointLinePoly();return false;'><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Add Points</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Spam</a>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>Forums</a>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flag</i>Updates</a>
           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">local_offer</i>Promos</a>
@@ -141,9 +144,9 @@
         <div class="mdl-grid demo-content">
             <div class="demo-separator mdl-cell--1-col"></div>
             <div id="ucllogo" name="ucllogo"> div goes here</div>
-            <div id="mapid" style="width: 600px; height: 500px;"></div>
+
+            <div id="mapid" style="width: 600px; height: 400px;"></div>
             <div id='showLocation'>Location will be displayed here</div>
-            <button id='trackLocation' onclick='trackLocation()'>Click Me to Get Your Location</button>
           </div>
         </div>
       </main>
@@ -153,9 +156,15 @@
       <script src="js/leaflet.js"></script>
       <script src="js/leafletFunctions.js"></script>
       <script src="js/userTracking.js"></script>
-    
+      <script src="js/utilities.js"></script>
+      <script src="js/startup.js"></script>
+      <script src="js/earthquakes.js"></script>
+
+    <script>startup(); </script>
   </body>
 </html>
 
 
 <!--<a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Spam</a>-->
+
+<!--<a class="mdl-navigation__link" href=""" onclick='addPointLinePoly();return false;'><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Add Points</a>-->

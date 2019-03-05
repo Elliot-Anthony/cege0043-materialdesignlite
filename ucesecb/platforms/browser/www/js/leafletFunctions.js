@@ -1,3 +1,5 @@
+var earthquakes;
+
 function addPointLinePoly(){
 	// add a point
   L.marker([51.5, -0.09]).addTo(mymap)
