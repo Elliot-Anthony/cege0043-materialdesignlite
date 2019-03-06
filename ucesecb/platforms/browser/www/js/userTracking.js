@@ -1,4 +1,3 @@
-
 var userMarker;
 
 function trackLocation() {
@@ -80,4 +79,3 @@ function showPosition(position) {
 	document.getElementById('showLocation').innerHTML = "Latitude: " + position.coords.latitude +
 	"<br>Longitude: " + position.coords.longitude;
 	}
-
