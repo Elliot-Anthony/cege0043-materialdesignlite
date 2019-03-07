@@ -1,11 +1,10 @@
-
 var userMarker;
 
 function trackLocation() {
-if (navigator.geolocation) {
-navigator.geolocation.watchPosition(showPosition);
-} else {
-document.getElementById('showLocation').innerHTML = "Geolocation is not supported by this browser.";}
+	if (navigator.geolocation) {
+	navigator.geolocation.watchPosition(showPosition);
+	} else {
+	document.getElementById('showLocation').innerHTML = "Geolocation is not supported by this browser.";}
 }
 
 function showPosition(position) {
@@ -22,15 +21,15 @@ getDistance()
 function getDistance() {
 	alert('getting distance');
 	// getDistanceFromPoint is the function called once the distance has been found
-	navigator.geolocation.getCurrentPosition(getDistanceFromMultiplePoints);
-	//navigator.geolocation.getCurrentPosition(getDistanceFromPoint);
+	//navigator.geolocation.getCurrentPosition(getDistanceFromMultiplePoints);
+	navigator.geolocation.getCurrentPosition(getDistanceFromPoint);
 }	
 
 function getDistanceFromPoint(position) {
 	// find the coordinates of a point using this website:
 	// these are the coordinates for Warren Street
-	var lat = 51.524616;
-	var lng = -0.13818;
+	var lat = 51.5240004;
+	var lng = -0.1347054;
 	// return the distance in kilometers
 	var distance = calculateDistance(position.coords.latitude, position.coords.longitude, lat,lng, 'K');
 	if (distance <= 0.1) {alert('Distance is less than 100m')
@@ -68,16 +67,3 @@ function getDistanceFromMultiplePoints(position) {
 	}
 	alert("Earthquake: " + closestQuake + " is distance " + minDistance + "km" +" away");
 }
-
-function trackLocation() {
-	if (navigator.geolocation) {
-	navigator.geolocation.watchPosition(showPosition);
-	} else {
-	document.getElementById('showLocation').innerHTML = "Geolocation is not supported by this browser.";}
-	}
-
-function showPosition(position) {
-	document.getElementById('showLocation').innerHTML = "Latitude: " + position.coords.latitude +
-	"<br>Longitude: " + position.coords.longitude;
-	}
-

@@ -1,3 +1,4 @@
+var client;
 var earthquakes;
 
 function addPointLinePoly(){
