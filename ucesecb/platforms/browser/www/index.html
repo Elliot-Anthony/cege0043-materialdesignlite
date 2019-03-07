@@ -76,6 +76,8 @@
     }
     </style>
 
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
   </head>
   <body>
     <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
@@ -148,9 +150,8 @@
             <div class="demo-separator mdl-cell--1-col"></div>
             <div id="ucllogo" name="ucllogo"> div goes here</div>
             <div id="mapid" style="width: 600px; height: 400px;"></div>
-            <div id="ajaxtext" style="width: 1600px; height: 20px;"><div <!doctype html>
-            <div id='showLocation'>Location will be displayed here</div>
-
+            <div id="ajaxtext" style="width: 1600px; height: 20px;">
+            <div w3-include-html="createForm.html"></div>
           </div>
         </div>
       </main>
@@ -164,6 +165,7 @@
       <script src="js/utilities.js"></script>
       <script src="js/startup.js"></script>
       <script src="js/ajax.js"></script>
+      <script src="js/uploadData.js"> </script>
       <!--<script src="js/earthquakes.js"></script>-->
 
     <script>startup(); </script>
