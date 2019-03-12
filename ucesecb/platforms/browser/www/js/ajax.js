@@ -2,7 +2,7 @@ var xhrNode;
 
 function callDivNodeJSChange() {
 	xhrNode = new XMLHttpRequest();
-	var url = "http://developer.cege.ucl.ac.uk:"+31267;
+	var url = "http://developer.cege.ucl.ac.uk:"+httpPortNumber;
 	xhrNode.open("GET",url, true);
 	xhrNode.onreadystatechange = processDivNodeJSChange;
 	try {
